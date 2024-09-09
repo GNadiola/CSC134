@@ -15,7 +15,7 @@ int main() {
     int height;
     int volume; // in cubic feet
 
-// the price related variables
+// the price related variables - all in $
 const double COST_PER_CU_FT = 0.23;
 const double PRICE_PER_CU_FT = 0.5;
 double cost;
