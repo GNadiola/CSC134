@@ -38,7 +38,7 @@ int main()
   account_balance=starting_account_balance-amount_of_withdrawal+amount_of_deposit;
 
   //Response
-  cout << "Your final account balance is " << account_balance << endl;
+  cout << "Your final account balance is $" << account_balance << endl;
 
   // set all decimals to 2 places
   cout << fixed << setprecision(2);
@@ -53,7 +53,7 @@ int main()
 
 // the price related variables - all in $
 const double COST_PER_CU_FT = 0.3;
-const double PRICE_PER_CU_FT = 0.5;
+const double PRICE_PER_CU_FT = 0.51;
 double cost;
 double customer_price;
 double profit;
@@ -66,6 +66,9 @@ double profit;
     */
 
     // Ask user questions
+    cout << "" << endl;
+    cout << "_______________________________" << endl;
+    cout << "Welcome to General Crates!" << endl;
     cout << "Let's get the crate dimensions (in feet)." << endl;
     cout << "What's the length? ";
     cin >> length;
@@ -84,7 +87,7 @@ double profit;
     // Output
     // next line requires iomanip
     cout << setprecision(2) << fixed;
-    cout << "Crate is: " << width << " x " << length << " x " << height << endl;
+    cout << "Crate is: " << width << "ft x " << length << "ft x " << height << "ft" << endl;
     cout << "Total volume is: " << volume << " cubic feet." << endl;
     // output the cost, the customer price, and the profit
     cout << "The total cost for production is $" << cost << endl;
