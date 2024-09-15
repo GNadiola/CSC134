@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "m1hw1_grosvenor": "c"
+        "m1hw1_grosvenor": "c",
+        "iostream": "cpp"
     }
 }
