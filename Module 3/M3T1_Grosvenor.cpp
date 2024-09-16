@@ -24,4 +24,5 @@ using namespace std;
     cout << "Length of the second rectangle:" << endl;
     cin >> length2;
 
+
  }
