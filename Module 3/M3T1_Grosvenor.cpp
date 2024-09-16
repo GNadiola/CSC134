@@ -24,5 +24,13 @@ using namespace std;
     cout << "Length of the second rectangle:" << endl;
     cin >> length2;
 
+   // Calc areas
+   area1 = length1 * width1;
+   area2 = length2 * width2;
 
+   // print the answer
+   cout << "The first area is: " << area1 << endl;
+   cout << "Te second area is: " << area2 << endl;
+
+   
  }
