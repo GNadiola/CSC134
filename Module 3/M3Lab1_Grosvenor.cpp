@@ -1,39 +1,24 @@
-// if statement example3
-// standard header
+// CSC 134
+// GrosvenorN
+// 9/16/2024
+// M3Lab1
 
 
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
-////
-// here we use a new trick that isn't covered until "Functions",
-// but the basics aren't too hard to pick up.
-// So far main() has been our only function, and all code was
-// located there.
-//
-// In this example, we add multiple functions that are used
-// by main(). If this isn't clear to you, don't worry -- we 
-// will spend more time on them in detail later.
 
-// declare that we are going to have more functions than main()
-// (I will say "function" and "method" interchangeably)
-// we should give them "verb" names, like we give our 
-// variables "noun" names. 
 
 void chooseBoba();
 void chooseSmoothie();
 
-// the lines above tell the program that these functions will 
-// exist, but we have to define them later on in the file.
-////
+
 
 // beginning of the main() method
 int main() {
   
-  // this program will ask a question and respond to it.
-  // You should run it, and test it by typing in different values.
-  // Example test values: 1, 2, 3, banana (try all of them)
+  // this program will ask a question and respond 
 
   int choice; 
 
@@ -55,13 +40,7 @@ int main() {
   cout << "Thank you for playing!" << endl;
   return 0; // tells the computer that we finished without errors
 
-} // end of the main() method
-
-////
-// After main(), we define all our other functions.
-// (Declaring means "This function exists", we did that above.)
-// (Defining means "This is what the function does".)
-////
+} // end of main
 
 void chooseBoba() {
   // this function is called in main if the user chooses 1.
@@ -74,6 +53,3 @@ void chooseDoor2() {
   cout << "You chose Smoothie" << endl;
   cout << "You win ... a bottle of floor wax." << endl;
 }
-
-// If we had a Door #3, or 4, we would add another else if to our
-// main(), and then declare and define chooseDoor3() and so on.
