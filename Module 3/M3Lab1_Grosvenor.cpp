@@ -48,7 +48,7 @@ void chooseBoba() {
   cout << "You win ... A FREE $30 GIFT CARD FOR BOBA!" << endl;
 }
 
-void chooseDoor2() {
+void chooseSmoothie() {
   // this function is called in main if the user chooses 1.
   cout << "You chose Smoothie" << endl;
   cout << "You win ... a bottle of floor wax." << endl;
