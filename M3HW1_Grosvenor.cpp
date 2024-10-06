@@ -4,11 +4,18 @@
 // 9/25/2024
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
  int main() {
+
+  // Question 1
+  cout << "Question 1"  << endl;
     // set up variables
-    int answer
+    string answer;
+    string yes;
+    string no;
+
 
     cout << "Hello, I am a C++ program!" << endl;
     cout << "Do you like me? Please type yes or no." << endl;
