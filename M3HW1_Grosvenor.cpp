@@ -33,6 +33,10 @@ using namespace std;
    }
    
 
+
+
+   cout << "________________________________________" << endl;
+
  // Question 2
  // Get user input
  // This is a simple receipt calculator.
@@ -52,7 +56,17 @@ double total;     // meal + tax
  cout << "What type of meal did you have? Dine-in or takeaway? Please enter 1 if the order is dine-in, 2 if it is to go." << endl;
  cin >> mealType;
 
- 
+  // Output options
+    if (mealType == 1) {
+      tipAmount = tipRate * mealPrice;
+    }
+    else { 
+      tipAmount = 0;
+   }
+
+// calculate the tax amount and the total
+taxAmount = taxRate * mealPrice; // 8% of 5.99
+total = mealPrice + taxAmount + tipAmount;
 
 // set all decimals to 2 places
 cout << fixed << setprecision(2);
@@ -62,7 +76,7 @@ cout << "Thank you for dining with us." << endl;
 cout << "Your meal total is $" << mealPrice << endl;
 cout << "The tax is $" << taxAmount << endl;
 cout << "The tip is $" << tipAmount << endl;
-cout << "Your total is $" << total << endl;
+cout << "Your total amount due is $" << total << endl;
 cout << "Please come again.";
 
 
