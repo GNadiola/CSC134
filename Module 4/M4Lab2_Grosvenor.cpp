@@ -53,9 +53,11 @@ bool play_round() {
     // did they win or lose?
     if (total == 7 || total == 11) {
         cout << "You win!!! :)" << endl;
+        is_winner = true;
     }
     else if (total == 2 || total == 3 || total == 12) {
         cout << "You lose :(" << endl;
+        is_winner = false;
     }
     else {
         // TODO: handle "rolling a point"

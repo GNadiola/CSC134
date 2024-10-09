@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "m1hw1_grosvenor": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
