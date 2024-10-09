@@ -42,10 +42,10 @@ int main()
 }
 
 bool play_round() {
-    die1 = roll();
-    die2 = roll();
+    int die1 = roll();
+    int die2 = roll();
     // give the results
-    total = die1 + die2;
+    int total = die1 + die2;
     cout << "You rolled "
          << die1 << " + "
          << die2 << " = " << total << endl;
