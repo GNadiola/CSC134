@@ -60,27 +60,19 @@ bool play_round() {
         is_winner = false;
     }
     else {
-        // TODO: handle "rolling a point"
         cout << "Your point is: " << total << endl;
         point = total; // save the point
-        // roll again
-        total = roll() + roll();
-
-        //keep rolling until you get point (win) or 7 (lose)
+        // we need a do while loop
+        //keep rolling until you get point (win) or / (lose)
         while (total != point && total != 7) {
+            if (total == point) {
+                is_winner = false;
+            }
             if (total == point) {
                 is_winner = true;
             }
-            else if (total == 7) {
-             is_winner = false;
-            }
-            else {
-                // keep rolling!
-                total = roll() + roll();
-                cout << "Reroll:" << total << endl;
-            }
-        }
+        } while (total != 7 && total != point) 
+    
     }
-
     return is_winner;
 }
