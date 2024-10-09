@@ -42,9 +42,10 @@ int main()
 }
 
 bool play_round() {
-    bool is_winner;
+    bool is_winner - false; // house wins by default
     int die1 = roll();
     int die2 = roll();
+    int point;
     // give the results
     int total = die1 + die2;
     cout << "You rolled "
@@ -53,17 +54,32 @@ bool play_round() {
 
     // did they win or lose?
     if (total == 7 || total == 11) {
-        cout << "You win!!! :)" << endl;
         is_winner = true;
     }
     else if (total == 2 || total == 3 || total == 12) {
-        cout << "You lose :(" << endl;
         is_winner = false;
     }
     else {
         // TODO: handle "rolling a point"
         cout << "Your point is: " << total << endl;
-        cout << "We'll handle this later." << endl;
+        point = total; // save the point
+        // roll again
+        total = roll() + roll();
+
+        //keep rolling until you get point (win) or 7 (lose)
+        while (total != point && total != 7) {
+            if (total == point) {
+                is_winner = true;
+            }
+            else if (total == 7) {
+             is_winner = false;
+            }
+            else {
+                // keep rolling!
+                total = roll() + roll();
+                cout << "Reroll:" << total << endl;
+            }
+        }
     }
 
     return is_winner;
