@@ -42,7 +42,7 @@ int main()
 }
 
 bool play_round() {
-    bool is_winner - false; // house wins by default
+    bool is_winner = false; // house wins by default
     int die1 = roll();
     int die2 = roll();
     int point;
