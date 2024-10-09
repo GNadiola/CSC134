@@ -1,6 +1,6 @@
 
 // CSC 134
-// M4LAB2 - Craps (was M3T3
+// M4LAB2 - Craps (was M3T3)
 // GrosvenorN
 // 10/9/24
 #include <iostream>
@@ -42,6 +42,7 @@ int main()
 }
 
 bool play_round() {
+    bool is_winner;
     int die1 = roll();
     int die2 = roll();
     // give the results
@@ -65,5 +66,5 @@ bool play_round() {
         cout << "We'll handle this later." << endl;
     }
 
-    return 0;
+    return is_winner;
 }
