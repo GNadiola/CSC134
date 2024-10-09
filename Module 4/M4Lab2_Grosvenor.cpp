@@ -64,14 +64,16 @@ bool play_round() {
         point = total; // save the point
         // we need a do while loop
         //keep rolling until you get point (win) or / (lose)
-        while (total != point && total != 7) {
-            if (total == point) {
+        do {
+            total = roll() + roll();
+            cout << "Come on lucky" << point << "rolled:" << total << endl;
+            if (total == 7) {
                 is_winner = false;
             }
             if (total == point) {
                 is_winner = true;
             }
-        } while (total != 7 && total != point) 
+        } while (total != 7 && total != point); 
     
     }
     return is_winner;
