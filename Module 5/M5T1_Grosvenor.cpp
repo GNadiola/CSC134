@@ -15,7 +15,7 @@ int double_an_int(int number);
 int main() {
     cout << "Hello from main" << endl;
     say_hello();
-    cout << "The magic numbe is: ";
+    cout << "The magic number is: ";
     int number = give_the_answer();
     cout << number << endl;
     int twotimes = double_an_int(number);
