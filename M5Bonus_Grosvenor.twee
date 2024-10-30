@@ -1,0 +1,288 @@
+:: StoryTitle
+M5Bonus_Grosvenor
+
+
+:: StoryData
+{
+  "ifid": "FCEA85C8-9AE4-41C8-BF5E-85D3440737B2",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Story Start",
+  "zoom": 1
+}
+
+
+:: Back Door {"position":"1025,475","size":"100,100"}
+You quietly sneak around back.
+
+The back door is already open...
+
+Do you go in?
+
+[[Enter, but beware the risk]]
+[[That's weird, find another way in]]
+[[Go Home]]
+
+
+:: Climb in {"position":"1275,725","size":"100,100"}
+(text-colour:blue)[Why would you climb in??? That was so-
+...anyway....]
+
+You lower yourself into the cellar and wait for your eyes to adjust o the dark. There is a small light coming from a crack in a door at the far end of the room.
+
+You approach and slowly pull open the door...
+(text-colour:red)[Something immediately tackles you back into the room.]
+
+What do you do??
+
+[[Push the creature off and run]] 
+[[Just die, I guess]]
+[[Fight back]]
+
+
+:: Enter, but beware the risk {"position":"1025,600","size":"100,100"}
+(text-colour:blue)[Why would you go inside??? That was really dumb, but anyway....]
+
+You step inside as delicately as possible, looking around with bated breath.
+
+Suddenly, your breathing gets loud and hoarse.
+
+Or wait, that's not //your// breathing... (text-colour:red)[there's something else in here.]
+
+[[Freeze]]
+[[Scream]]
+[[Look around]]
+
+
+:: Fight back {"position":"1275,850","size":"100,100"}
+(text-colour:blue)[I don't know how you did it...]
+
+Somehow... your frantic clawing and scratching injured the creature enough to allow you to get away...
+
+
+
+
+:: Freeze {"position":"1025,725","size":"100,100"}
+The breathing is laboured and loud, but it doesn't approach.
+
+Whatever is in here, it sounds big. You try to pinpoint the direction that the odd breathing is coming from.
+
+Straining your ears, you focus on each direction in your surroundings, but the sound doesn't seem to be coming from any of them...
+
+A drop of water hits your arm...
+
+(text-colour:red)[//That's too thick to be water...//]
+
+[[Look around]]
+[[Scream]]
+[[Leave]]
+
+
+:: Front Door {"position":"900,475","size":"100,100"}
+You cautiously approach the front door and jiggle the knob.
+
+(text-colour:red)[It's locked.]
+
+[[Try Something Else ->Story Start]]
+
+
+:: Game Over {"position":"775,725","size":"100,100"}
+[[Try Again->Story Start]]
+
+
+
+:: Get up and shake them off {"position":"650,725","size":"100,100"}
+You leap up and frantically shake them off, but you see more rushing in from the creases in the walls, seemingly spawning from the void.
+
+How do you get rid of them? Where are they coming from??
+
+You remember the odd house, and the unsettling noises you heard from it. Nothing strange had happened before that...
+
+Time to trace the poblem back to its source, perhaps?
+
+Will you go back?
+
+[[No.->Just die, I guess]]
+[[Go Back to the house->Story Start]]
+
+
+:: Go Home {"position":"775,475","size":"100,100"}
+Ah, Home at last. Very relaxing.
+
+Your stomach emits a growl.
+
+[[Order Chinese]]
+[[Order Caribbean]]
+[[Go to Bed]]
+
+
+:: Go Home Immediately {"position":"900,850","size":"100,100"}
+(text-colour:blue)[I'm just glad you went home when you did. It wouldv'e been stupid to go inside. You didn't even get too close to the house! Good Job. ]
+
+[[Go to Sleep]]
+
+
+
+
+:: Go to Bed {"position":"650,600","size":"100,100"}
+(text-colour:blue)[I'm just glad you went home when you did. It would've been stupid to go inside. You did get awfully close to the house though, hopefully nothing followed you home...]
+
+You enter into a calm slumber...
+
+At least it was calm at first, until you felt something crawling up your leg.
+
+You lift the covers to see.... 
+
+(text-colour:orange)[//Hundreds of tiny spiders shimmying up your leg.//]
+
+What do you do?
+
+[[Get up and shake them off]]
+[[Just die, I guess]]
+
+
+:: Go to Sleep {"position":"900,975","size":"100,100"}
+(text-colour:blue)[Congratulations, you're safe!!!]
+
+
+[[Game Over]]
+
+
+:: Just die, I guess {"position":"525,725","size":"100,100"}
+Well, You died.
+
+Aw, better luck next time. 
+
+(text-colour:red)[Make smarter decisions.]
+
+[[Game Over]]
+
+
+:: Leave {"position":"1025,850","size":"100,100"}
+The sudden movement awakens whatever was breathing heavily near you...
+
+You hear a loud shuffle from above and feel the the pressure of an animal drop onto our shoulders.
+
+You hit the ground.
+
+What do you do?
+
+[[Just die, I guess]]
+[[Push the creature off and run]]
+
+
+:: Look around {"position":"900,725","size":"100,100"}
+You look around, turning your head sloooowwlllyy.
+
+You spot something above you.
+
+Carefully craning your neck upwards, you spot...
+
+[[What??]]
+
+
+:: Order Caribbean {"position":"900,600","size":"100,100"}
+(text-colour:blue)[I'm just glad you went home when you did. It wouldv'e been stupid to go inside. You did get awfully close to the house though, hopefully nothing followed you home...The Caribbean food is delicious.]
+
+You enter into a calm slumber...
+
+At least it was calm at first, until you felt something crawling up your leg.
+
+You lift the covers to see.... 
+
+(text-colour:orange)[//Hundreds of tiny spiders shimmying up your leg.//]
+
+What do you do?
+
+[[Get up and shake them off]]
+[[Just die, I guess]]
+
+
+
+:: Order Chinese {"position":"775,600","size":"100,100"}
+(text-colour:blue)[I'm just glad you went home when you did. It wouldv'e been stupid to go inside. You did get awfully close to the house though, hopefully nothing followed you home...]
+
+The Chinese food is delicious.
+
+You enter into a calm slumber...
+
+At least it was calm at first, until you felt something crawling up your leg.
+
+You lift the covers to see.... 
+
+(text-colour:orange)[//Hundreds of tiny spiders shimmying up your leg.//]
+
+What do you do?
+
+[[Get up and shake them off]]
+[[Just die, I guess]]
+
+
+
+:: Push the creature off and run {"position":"1025,975","size":"100,100"}
+(text-colour:blue)[...
+
+It's cute that you thought that would work.
+
+Yeah no you're dead.]
+
+[[Game Over]]
+
+
+:: Run {"position":"1150,850","size":"100,100"}
+(text-colour:blue)[Did you really think you could run fast enough??? Come on now.]
+
+The (text-colour:red)[//thing//] catches up to you immediately. 
+It leaps onto you, sending you crashing to the ground.
+
+What to do... what to do...
+
+[[Push the creature off and run]] 
+[[Just die, I guess]]
+
+
+:: Scream {"position":"1150,725","size":"100,100"}
+(text-colour:blue)[Why would you do that?????]
+
+Your loud noise awakens the (text-colour:red)[thing.]
+
+You hear it skittering across the ceiling, and in your periphery you see something crawl down the wall in a flash.
+
+Well, crawl isn't exactly accurate. It was half crawl, half slither, but something agile and clumsy at the same time.
+
+What do you do?
+
+[[Just die, I guess]]
+[[Run]]
+
+
+:: Story Start {"position":"900,350","size":"100,100"}
+It's Halloween, and you've made your way down the street o the spookiest house on the block.
+
+As you pause on the front lawn, you can hear faint noises coming form the house. A light, eerie scratching sound echoes from the house.
+
+What do you do?
+[[Front Door]]
+[[Back Door]] 
+[[Go Home Immediately]]
+
+
+:: That's weird, find another way in {"position":"1150,600","size":"100,100"}
+The door being left open was definitely odd.
+
+That seemed like a trap. You encircle the house looking for another way in when you notice...
+
+(text-colour:red)...an open cellar door.
+
+What will you do?
+
+[[Climb in]]
+[[Go Home]]
+[[Go back to the Back Door ->Back Door]]
+
+
+:: What?? {"position":"775,850","size":"100,100"}
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWxmYVvcV4zPwCBeuv-a9eDBX-owXpzlUoKw&sg">
+
+[[Run]]
+[[Scream]]
