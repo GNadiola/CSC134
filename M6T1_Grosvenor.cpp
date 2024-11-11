@@ -24,7 +24,7 @@ void partOne() {
     // - ask how many cars
     // - add them to the total
     // when done, report total and average
-
+    int cars[NUM_DAYS]; // array to hold all values
     double total = 0;
     int todays_count = 0;
     int average = 0;
@@ -36,6 +36,11 @@ void partOne() {
         // find average - double divided by an int will give a double (if both ints, would be an int)
         average = total / NUM_DAYS;
         cout << "For all " << NUM_DAYS << " days:" << endl;
+        // print each day's count
+        for (int day = 1; day <= NUM_DAYS; day++) {
+            cout << cars[day] << ",";
+        }
+        cout << endl;
         cout << "Total cars: " << total << endl;
         cout << "Average: " << average << endl;
 
