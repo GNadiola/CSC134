@@ -31,6 +31,9 @@ void choice_order_food();
 void choice_order_caribbean();
 void choice_order_chinese();
 void choice_order_italian();
+void choice_turn_on_flashlight();
+void choice_run();
+void choice_fight();
 
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
@@ -144,10 +147,43 @@ void choice_order_food () {
 void choice_enter_the_house(){
     cout << "You quietly enter the house, shaking from the eerie draft." << endl;
     cout << "The house is completely dark." << endl;
+    cout << "Do you leave? Or turn on your flashlight?" << endl;
+    cout << "1. Go Home" << endl;
+    cout << "2. Turn on your flashlight" << endl;
+     int choice;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+        choice_go_home();
+        } else if (2 == choice) {
+        choice_turn_on_flashlight();}
+}
+
+void choice_turn_on_flashlight (){
     cout << "You hear a faint chittering sound directly above you." << endl;
+    cout << "the light awakened something." << endl;
     cout << "You slowly look up." << endl;
     cout << "A giant spider comes crawling towards you, the size of 3 men." << endl;
-    cout << "***Game Over***" << endl;
+    cout << "Do you run? Or fight?" << endl;
+    cout << "1. Run" << endl;
+    cout << "2. Fight." << endl;
+     int choice;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+        choice_run();
+        } else if (2 == choice) {
+        choice_fight();}
+}
+
+void choice_run(){
+  cout << "The thing is much faster than you. It catches up before you can get far... you know what happens next..." << endl;
+cout << "***Game Over***" << endl;
+}
+
+void choice_fight (){
+  cout << "You manage to injure the beast... but can you get away before it recovers?? To be continued..." << endl;
+  cout << "***Game Over***" << endl;
 }
 
 void choice_order_caribbean (){
